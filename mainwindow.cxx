@@ -341,7 +341,9 @@ void MainWindow::on_pushButtonSend_clicked()
 
 void MainWindow::sf_output_ready(QString s)
 {
-	ui->plainTextEdit->appendPlainText(s);
+	QTextCursor c(ui->plainTextEdit->textCursor());
+	c.movePosition(QTextCursor::MoveOperation::End);
+	c.insertText(s);
 }
 
 void MainWindow::createWidget(QString data)
