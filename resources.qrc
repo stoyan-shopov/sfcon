@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/forth-code">
+        <file>draw.fs</file>
+    </qresource>
+    <qresource prefix="/sys">
+        <file>floppy.img</file>
+    </qresource>
+</RCC>
