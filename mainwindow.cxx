@@ -135,7 +135,7 @@ int sfsync()
 cell sfopen(const char *pathname, int flags)
 {
 	if (pf_open(pathname) != FR_OK)
-		return 0;
+		return EOF;
 	else
 		return 1;
 }
